@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <br>
+        <br>
+         <form method="post" action = "next">
+            {% csrf_token %}
+            <input type = "text "placeholder="Enter user name " name="name">
+            <br><br><br>
+            <input type="text" placeholder=" enter passowrd " name = "passowrd">
+            <br><br><br>
+            <input type = "submit" value="Submit">
+         </form>
+         <p color='red'>{{tt}}</p>
+
+    </body>
+</html>
